@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.cls-design.wcf.articleIsFeatured" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename>WoltLab Suite Core: Article Is Featured</packagename>
+		<packagename language="de">WoltLab Suite Core: Artikel als "Empfohlen" markieren</packagename>
+		<packagedescription>With this plugon you can mark articles as "Featured".</packagedescription>
+        <packagedescription languagecode="de">Mit dieser Erweiterung kann man Artikel als "Empfohlen" markieren.</packagedescription>
+		<version>1.1.6</version>
+		<date>2023-09-07</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author>www.cls-design.com</author>
+		<authorurl>http://www.cls-design.com</authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="5.5.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="7.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="acpTemplate" />
+		<instruction type="file" />
+		<instruction type="database">acp/database/install_com.cls-design.wcf.articleisfeatured.php</instruction>
+		<instruction type="template" />
+		<instruction type="eventListener" />
+		<instruction type="templateListener" />
+		<instruction type="language" />
+		<instruction type="objectTypeDefinition" />
+		<instruction type="objectType" />
+		<instruction type="box" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.5">
+		<instruction type="file" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.4">
+		<instruction type="file" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.3">
+		<instruction type="file" />
+	</instructions>
+	
+	<instructions type="update" fromversion="1.1.2">
+		<instruction type="file" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.1">
+		<instruction type="file" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.0">
+		<instruction type="template" />
+	</instructions>
+</package>

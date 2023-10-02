@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/eventListener.xsd">
+    <import>
+        <!-- admin -->
+        <eventlistener name="articleIsFeaturedAddForm">
+            <environment>admin</environment>
+            <eventclassname>wcf\acp\form\ArticleAddForm</eventclassname>
+            <eventname>saved</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="articleIsFeaturedAddFormInherited">
+            <environment>admin</environment>
+            <eventclassname>wcf\acp\form\ArticleAddForm</eventclassname>
+            <eventname>assignVariables,readFormParameters,save,validate</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+        </eventlistener>
+        <eventlistener name="articleIsFeaturedEditForm">
+            <environment>admin</environment>
+            <eventclassname>wcf\acp\form\ArticleEditForm</eventclassname>
+            <eventname>readData</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+        </eventlistener>
+        <!-- /admin -->
+        <!-- user -->
+        <eventlistener name="articleIsFeaturedAddFormUser">
+            <environment>user</environment>
+            <eventclassname>wcf\form\ArticleAddForm</eventclassname>
+            <eventname>saved</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="articleIsFeaturedAddFormInheritedUser">
+            <environment>user</environment>
+            <eventclassname>wcf\form\ArticleAddForm</eventclassname>
+            <eventname>assignVariables,readFormParameters,save,validate</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+        </eventlistener>
+        <eventlistener name="articleIsFeaturedEditFormUser">
+            <environment>user</environment>
+            <eventclassname>wcf\form\ArticleEditForm</eventclassname>
+            <eventname>readData,assignVariables,readFormParameters,save,validate</eventname>
+            <listenerclassname>wcf\system\event\listener\ArticleIsFeaturedAddFormListener</listenerclassname>
+        </eventlistener>
+        <!-- /user -->
+    </import>
+</data>

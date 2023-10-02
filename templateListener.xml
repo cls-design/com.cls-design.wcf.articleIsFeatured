@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<import>
+		<!-- admin -->
+		<templatelistener name="articleAddAdminIsFeatured">
+			<eventname>categoryFields</eventname>
+			<environment>admin</environment>
+			<templatecode><![CDATA[{include file='__articleAddIsFeatured'}]]></templatecode>
+			<templatename>articleAdd</templatename>
+		</templatelistener>
+		
+		<!-- /user -->
+		<templatelistener name="articleAddIsFeatured">
+			<eventname>categoryFields</eventname>
+			<environment>user</environment>
+			<templatecode><![CDATA[{include file='__articleAddIsFeatured'}]]></templatecode>
+			<templatename>articleAdd</templatename>
+		</templatelistener>		
+		<templatelistener name="articleListIsFeatured">
+			<environment>user</environment>
+			<templatename>articleListItems</templatename>
+			<eventname>contentItemBadges</eventname>
+			<templatecode><![CDATA[{include file='__articleIsFeatured'}]]></templatecode>
+		</templatelistener>		
+		<templatelistener name="articleIsFeatured">
+			<environment>user</environment>
+			<templatename>article</templatename>
+			<eventname>contentHeaderMetaData</eventname>
+			<templatecode><![CDATA[{include file='__articleIsFeatured'}]]></templatecode>
+		</templatelistener>	
+	</import>
+
+	<delete>
+		<templatelistener name="articleListIsFeatured">
+			<environment>user</environment>
+			<templatename>articleListItems</templatename>
+			<eventname>articleListMetaData</eventname>
+			<templatecode><![CDATA[{include file='__articleIsFeatured'}]]></templatecode>
+		</templatelistener>	
+	</delete>
+
+</data>

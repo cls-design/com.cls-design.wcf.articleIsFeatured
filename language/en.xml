@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en">
+
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.cls-design.wcf.box.articleisfeatured"><![CDATA[Article-Featured]]></item>
+	</category>
+
+	<category name="wcf.acp.article">
+		<item name="wcf.acp.article.markAsFeatured"><![CDATA[Featured articles]]></item>
+		<item name="wcf.acp.article.markAsFeatured.description"><![CDATA[Mark article as "featured"]]></item>
+	</category>	
+
+	<category name="wcf.article">
+		<item name="wcf.article.articleIsFeatured"><![CDATA[Featured]]></item>
+	</category>	
+
+</language>

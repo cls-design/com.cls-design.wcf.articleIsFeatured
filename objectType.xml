@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/object-type.xsd">
+	<import>
+		<!-- box controller -->
+		<type>
+			<name>com.cls-design.wcf.box.articleisfeatured</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\ArticleListIsFeaturedBoxController</classname>
+		</type>
+		<!-- box controller conditions -->
+		<type>
+			<name>com.cls-design.wcf.box.articleisfeatured.multiCategoryCondition</name>
+			<definitionname>com.cls-design.wcf.box.articleisfeatured.condition</definitionname>
+			<classname>wcf\system\condition\article\ArticleCategoryCondition</classname>
+		</type>
+	</import>
+</data>

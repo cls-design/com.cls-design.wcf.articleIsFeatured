@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/vortex/box.xsd">
+	<import>
+		<box identifier="com.cls-design.wcf.box.articleIsFeatured">
+			<name language="de">Artikel Empfohlen - Box (Artikel)</name>
+			<name language="en">Articles featured - Box (Article)</name>
+			<boxType>system</boxType>
+			<objectType>com.cls-design.wcf.box.articleisfeatured</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+
+			<limit>5</limit>
+
+			<content language="de">
+				<title>Empfohlene Artikel</title>
+			</content>
+			<content language="en">
+				<title>Featured Articles</title>
+			</content>
+		</box>
+	</import>
+</data>
