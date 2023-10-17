@@ -11,14 +11,14 @@ use wcf\util\StringUtil;
 /**
  * Handles setting the article featured settings
  *
- * @author	cls-design
- * @copyright	2001-2017 WoltLab GmbH
+ * @author		www.cls-design.com
+ * @copyright	www.cls-design.com
  * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package	WoltLabSuite\Core\System\Event\Listener
  */
 class ArticleIsFeaturedAddFormListener implements IParameterizedEventListener {
 	/**
-	 * birthday of the created or edited person
+	 * Article
 	 * @var	string
 	 */
 	protected $articleIsFeatured = 0;
