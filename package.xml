@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>WoltLab Suite Core: Article Is Featured</packagename>
 		<packagename language="de">WoltLab Suite Core: Artikel als "Empfohlen" markieren</packagename>
-		<packagedescription>With this plugon you can mark articles as "Featured".</packagedescription>
+		<packagedescription>With this plugin you can mark articles as "Featured".</packagedescription>
         <packagedescription languagecode="de">Mit dieser Erweiterung kann man Artikel als "Empfohlen" markieren.</packagedescription>
 		<version>1.1.6</version>
 		<date>2023-09-07</date>
@@ -15,7 +15,7 @@
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="5.5.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="5.5.16">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
